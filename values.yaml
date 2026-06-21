@@ -1,3 +1,13 @@
 fernetKey: VjAyeUdoZGtMV2Q3N1Q2cTR3dm01VDRVUGIxc3ZsNmg=
 webserverSecretKey: VjAyeUdoZGtMV2Q3N1Q2cTR3dm01VDRVUGIxc3ZsNmg=
 executor: "KubernetesExecutor"
+
+dags:
+  gitSync:
+    enabled: true
+    repo: "https://github.com/g-kapkoti/KubernetesForDataEngineering.git"
+    branch: "main"
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: "dags"
